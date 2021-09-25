@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+}
+
+canvas {
+  height: 100%;
+  width: 100%;
+}
+
+.preload {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0.9;
+}
+
+#start-button {
+  margin: 0 auto;
+  margin-bottom: 20vh;
+  font-size: 25px;
+  background-color: grey;
+  border: none;
+  color: #fffc00;
+  border-radius: 12px;
+  padding: 15px 30px;
+  outline: none;
+  transition: 0.25s;
+}
+
+#start-button:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+}
