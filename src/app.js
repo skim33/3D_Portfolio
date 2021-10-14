@@ -145,6 +145,28 @@ function start() {
   document.addEventListener('mousemove', onHover);
 }
 
+manager.onStart = function(url, itemsLoaded, itemsTotal) {
+  // console.log("Loading started")
+};
+
+manager.onLoad = function() {
+  let stateCheck = setInterval(function() {
+    if (document.readyState === 'complete') {
+      clearInterval(stateCheck);
+      let preload = document.getElementsByClassName('preload');
+
+      for (let i = 0; i < preload.length; i++) {
+        preload[i].style.display = 'none';
+      }
+    }
+  }, 1000);
+  // console.log("Loading complete");
+}
+
+manager.onError = function(urt) {
+  // console.log("Error loading");
+}
+
 function onWindowReseize() {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
@@ -153,7 +175,7 @@ function onWindowReseize() {
 
 function loadingPageEventListener() {
   setTimeout(() => {
-    document.getElementById('preload').style.display = 'none';
+    document.getElementById('start-text').style.display = 'none';
   }, 750);
 
   let startButton = document.getElementById("start-button");
@@ -762,7 +784,7 @@ function addStatue() {
       objectMesh.geometry = obj.geometry;
       objectMesh.material = obj.material;
     });
-    console.log(dumpObject(gltf.scene).join('\n'));
+    // console.log(dumpObject(gltf.scene).join('\n'));
 
   }), undefined, function (error) {
     console.log(error);
