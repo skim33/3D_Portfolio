@@ -47,14 +47,19 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://shawn-kim-3d-portfolio.herokuapp.com/)
 
-One of the most used features of SNS used nowadays is realtime interaction between users. This social networking web app is built with the React Framework for frontend, and Firebase backend services, which allows users to add posts on the feed with "Like" functionality.
+JavaScript libraries such as Three.js and Ammo.js, allowed me to build an interactive website with 3D graphics. The link shown below, is the tutorial I went through to learn how to include a physics engine like Ammo.js, to a Vanilla JavaScript project. To be specific, things I have learned are how to move objects and detect collisions in JavaScript 3D Physics using Ammo.js and Three.js. This is an ongoing project that needs to be improved by implementing functionalities such as mobile responsiveness.
+
+Reference: https://medium.com/@bluemagnificent/intro-to-javascript-3d-physics-using-ammo-js-and-three-js-dd48df81f591
 
 ### Built With
 
-- [React](https://reactjs.org/) (Frontend)
-- [Redux](https://redux.js.org/) (State Management)
-- [Firebase](https://firebase.google.com/) (Backend / Host)
-- [Material UI](https://mui.com/)
+- [HTML/CSS](https://developer.mozilla.org/en-US/docs/Web/HTML) (Frontend)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) (Frontend)
+- [Node js](https://nodejs.org/en/) (Cross-platform Runtime Environment)
+- [Three.js](https://threejs.org/) (JS library / API)
+- [Ammo.js](https://github.com/kripken/ammo.js) (JS Physics Engine)
+- [Stats.js](https://github.com/mrdoob/stats.js/) (JS Performance Monitor)
+- [Heroku](https://firebase.google.com/) (PaaS / Host)
 
 <!-- GETTING STARTED -->
 
@@ -67,35 +72,10 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Contact
 
