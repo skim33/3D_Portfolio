@@ -1,19 +1,19 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/skim33/SNS-portfolio">
+  <a href="https://github.com/skim33/3D_Portfolio">
     <img src="src/assets/logo_login.png" alt="Logo" width="100" height="auto">
   </a>
 
-  <h3 align="center">SNS Portflio</h3>
+  <h3 align="center">3D Portfolio</h3>
 
   <p align="center">
     A simple forum website with Like functionality
     <br />
-    <a href="https://github.com/skim33/SNS-portfolio"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/skim33/3D_Portfolio"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://shawn-kim-portfolio.web.app/messaging">View Demo</a>
+    <a href="https://shawn-kim-3d-portfolio.herokuapp.com/">View Demo</a>
     <br />
     <div align="center">Please logn with the guest email address and password shown below:</div>
     <br />
@@ -42,7 +42,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://shawn-kim-portfolio.web.app/messaging)
+[![Product Name Screen Shot][product-screenshot]](https://shawn-kim-3d-portfolio.herokuapp.com/)
 
 One of the most used features of SNS used nowadays is realtime interaction between users. This social networking web app is built with the React Framework for frontend, and Firebase backend services, which allows users to add posts on the feed with "Like" functionality.
 
@@ -98,7 +98,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 Shawn Kim - shawnkimwk@gmail.com
 
-Project Link: [https://github.com/skim33/SNS-portfolio](https://github.com/skim33/SNS-portfolio)
+Project Link: [https://github.com/skim33/3D_Portfolio](https://github.com/skim33/3D_Portfolio)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
