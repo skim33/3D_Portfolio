@@ -113,9 +113,10 @@ function start() {
   addText(35, 0.01, -30, 'SKILLS', 4, 0x000000);
   addText(-45, 0.01, -30, 'PORTFOLIO', 4, 0x000000);
   addText(-45, 0.01, 10, 'Timeline', 4, 0x000000);
-  addText(-45, 0.01, -50, 'Click On Billboards To Visit', 3, 0x292929);
-  addText(-45, 0.01, -45, 'Guest - Email: guest@guest.com', 2, 0x292929);
-  addText(-45, 0.01, -40, '- Password: 123123', 2, 0x292929);
+  addText(-45, 0.01, -55, 'Click On Billboards To Visit', 3, 0x292929);
+  addText(-45, 0.01, -50, 'Guest - Email: guest@guest.com', 2, 0x292929);
+  addText(-45, 0.01, -45, '- Password: 123123', 2, 0x292929);
+  addText(-45, 0.01, -40, '※ No need for full name and profile pic URL to login', 2, 0x292929);
   addText(56.5, 0.01, 75, '●', 5, 0x064eb2);
   addText(56.8, 0.01, 69, '^', 3, 0x313031);
   addText(56.8, 0.01, 67, '^', 3, 0x313031);
