@@ -17,7 +17,7 @@
     <br />
     <div align="center">Please use the arrow keys on your keyboard to move the ball.</div>
     <br />
-    <div align="center">At the portfolio section, please click on a billboard and login with the guest email address and password shown below:</div>
+    <div>At the portfolio section, please click on a billboard and login with the guest email address and password shown below:</div>
     <br />
     <div align="center">Email: guest@guest.com</div>
     <div align="center">Password: 123123</div>
