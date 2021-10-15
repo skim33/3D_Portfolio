@@ -103,4 +103,4 @@ Project Link: [https://github.com/skim33/3D_Portfolio](https://github.com/skim33
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[product-screenshot]: src/assets/screen_shot.png
+[product-screenshot]: ./assets/screen_shot.png
