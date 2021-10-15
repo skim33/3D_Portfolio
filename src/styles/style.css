@@ -97,6 +97,16 @@ body {
   top: 35px;
 }
 
+.preload-text {
+  position: relative;
+  margin-top: 200px;
+  left: auto;
+  right: auto;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
 @keyframes spin {
   0%,
   15% {
