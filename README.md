@@ -8,14 +8,16 @@
   <h3 align="center">3D Portfolio</h3>
 
   <p align="center">
-    A simple forum website with Like functionality
+    A 3D portfolio website built with Three.js
     <br />
     <a href="https://github.com/skim33/3D_Portfolio"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://shawn-kim-3d-portfolio.herokuapp.com/">View Demo</a>
     <br />
-    <div align="center">Please logn with the guest email address and password shown below:</div>
+    <div align="center">Please use the arrow keys on your keyboard to move the ball.</div>
+    <br />
+    <div align="center">At the portfolio section, please click on a billboard and login with the guest email address and password shown below:</div>
     <br />
     <div align="center">Email: guest@guest.com</div>
     <div align="center">Password: 123123</div>
