@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/skim33/3D_Portfolio">
-    <img src="/assets/logo.jpg" alt="Logo" width="100" height="auto">
+    <img src="/assets/daylightBox/mystic_lf.jpg" alt="Logo" width="100" height="auto">
   </a>
 
   <h3 align="center">3D Portfolio</h3>
