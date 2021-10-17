@@ -126,8 +126,8 @@ canvas {
 .start-text {
   height: 100%;
   width: 100%;
-  padding-left: 5px;
-
+  padding-left: 15px;
+  padding-right: 15px;
   position: absolute;
   top: 0;
   left: 0;
@@ -138,10 +138,11 @@ canvas {
   align-items: center;
   z-index: 999;
   opacity: 0.9;
+  word-break: keep-all;
+  font-family: monospace;
 }
 
 #start-button {
-  margin-top: 40px;
   margin-bottom: 20vh;
   font-size: 25px;
   background-color: grey;
