@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .loader-wrapper {
@@ -125,6 +126,8 @@ canvas {
 .start-text {
   height: 100%;
   width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
   position: absolute;
   top: 0;
   left: 0;
