@@ -6,7 +6,7 @@ import {
   stats,
   manager,
   createWorld,
-  dumpObject
+  // dumpObject
 } from './resources/world.js';
 
 import {
