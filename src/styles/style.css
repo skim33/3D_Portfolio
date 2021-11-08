@@ -146,15 +146,15 @@ canvas {
   margin-bottom: 20vh;
   font-size: 25px;
   background-color: grey;
-  border: none;
+  border: 2px solid transparent;
   color: #fffc00;
   border-radius: 12px;
   padding: 15px 30px;
   outline: none;
-  transition: 0.25s;
+  transition: all 0.25s ease-in-out;
 }
 
 #start-button:hover {
   cursor: pointer;
-  transform: scale(1.15);
+  border: 2px solid #fffc00;
 }
