@@ -13,7 +13,7 @@
     <a href="https://github.com/skim33/3D_Portfolio"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://shawn-kim-3d-portfolio.herokuapp.com/">View Demo</a>
+    <a href="https://shawnkim-portfolio.netlify.app/">View Demo</a>
     <br />
     <div align="center">Please use the arrow keys on your keyboard to move the ball.</div>
     <br />
