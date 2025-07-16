@@ -1,62 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Porfolio</title>
+    <base href="/" />
+    <link rel="stylesheet" type="text/css" href="./src/styles/style.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-X1DRQDQHLR"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>3D Porfolio</title>
-  <base href="/">
-  <link rel="stylesheet" type="text/css" href="./src/styles/style.css" />
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-X1DRQDQHLR"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      gtag("config", "G-X1DRQDQHLR");
+    </script>
+  </head>
 
-    gtag('config', 'G-X1DRQDQHLR');
-  </script>
-</head>
+  <body id="document-body">
+    <div class="loader-wrapper preload">
+      <div class="loader">
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+      </div>
 
-<body id="document-body">
-  <div class="loader-wrapper preload">
-    <div class="loader">
-      <div class="loader-line-wrap">
-        <div class="loader-line"></div>
-      </div>
-      <div class="loader-line-wrap">
-        <div class="loader-line"></div>
-      </div>
-      <div class="loader-line-wrap">
-        <div class="loader-line"></div>
-      </div>
-      <div class="loader-line-wrap">
-        <div class="loader-line"></div>
-      </div>
-      <div class="loader-line-wrap">
-        <div class="loader-line"></div>
-      </div>
+      <div class="preload-text preload">Loading...</div>
     </div>
 
-    <div class="preload-text preload">Loading...</div>
-  </div>
+    <div class="start-text" id="start-text">
+      <h1>안녕하세요. 4년차 웹 개발자 김우혁(Shawn)입니다.</h1>
+      <h2>
+        끝없은 학습과 도전으로 부족함을 채워 성장해 가는 자세를 유지하고
+        있습니다.
+      </h2>
+      <h2>
+        Three.js 라이브러리를 사용해서 3D 인터렉티브 포트폴리오 웹 사이트를 구축
+        해보았습나다.
+      </h2>
+      <br />
+      <img
+        src="./assets/arrowkeys.png"
+        alt="arrowkeys"
+        width="100px"
+        height="auto"
+      />
+      <h2>키보드 방향 키로 공을 굴려주세요!</h2>
+      <button id="start-button">TRY IT OUT</button>
+    </div>
 
-  <div class="start-text" id="start-text">
-    <h1>안녕하세요. 웹 개발자를 지향하는 김우혁(Shawn)입니다.</h1>
-    <h2>끝없은 학습과 도전으로 부족함을 채워 성장해 가는 자세를 유지하고 있습니다.</h2>
-    <h2>Three.js 라이브러리를 사용해서 3D 인터렉티브 포트폴리오 웹 사이트를 구축 해보았습나다.</h2>
-    <br />
-    <img src="./assets/arrowkeys.png" alt="arrowkeys" width="100px" height="auto">
-    <h2>키보드 방향 키로 공을 굴려주세요!</h2>
-    <button id="start-button">TRY IT OUT</button>
-  </div>
-
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js" integrity="sha512-n8IpKWzDnBOcBhRlHirMZOUvEq2bLRMuJGjuVqbzUJwtTsgwOgK5aS0c1JA647XWYfqvXve8k3PtZdzpipFjgg==" crossorigin="anonymous"></script>
-  <script defer src="js/ammo.js"></script>
-  <script defer src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-  <script defer type="module" src="src/app.js"></script>
-</body>
-
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js"
+      integrity="sha512-n8IpKWzDnBOcBhRlHirMZOUvEq2bLRMuJGjuVqbzUJwtTsgwOgK5aS0c1JA647XWYfqvXve8k3PtZdzpipFjgg=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/ammo.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"
+    ></script>
+    <script defer type="module" src="src/app.js"></script>
+  </body>
 </html>

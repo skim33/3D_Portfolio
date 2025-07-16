@@ -1,9 +1,9 @@
-import { scene, manager } from './world.js';
+import { scene, manager } from "./world.js";
 
 export function addText(x, y, z, inputText, fontSize, fontColor) {
-  var text_loader = new THREE.FontLoader();
+  const text_loader = new THREE.FontLoader();
 
-  text_loader.load("../../assets/Inter_Regular.json", function(font) {
+  text_loader.load("../../assets/Inter_Regular.json", function (font) {
     let xMid, text;
 
     let color = fontColor;
@@ -35,16 +35,24 @@ export function addText(x, y, z, inputText, fontSize, fontColor) {
   });
 }
 
-export function addPhotoOnPlane(x, y, z, xScale, zScale, inputPhoto, URLLink = null) {
+export function addPhotoOnPlane(
+  x,
+  y,
+  z,
+  xScale,
+  zScale,
+  inputPhoto,
+  URLLink = null
+) {
   let geometry = new THREE.PlaneBufferGeometry(xScale, zScale);
   const loader = new THREE.TextureLoader(manager);
-  const　texture = loader.load(inputPhoto);
+  const texture = loader.load(inputPhoto);
   texture.maxFilter = THREE.NearFilter;
   texture.minFilter = THREE.LinearFilter;
   texture.encoding = THREE.sRGBEncoding;
   const material = new THREE.MeshBasicMaterial({
     map: texture,
-    transparent: true
+    transparent: true,
   });
   material.depthWrite = true;
   material.depthTest = true;
@@ -54,8 +62,6 @@ export function addPhotoOnPlane(x, y, z, xScale, zScale, inputPhoto, URLLink = n
   photo.rotation.x = -Math.PI * 0.5;
   photo.renderOrder = 1;
   photo.receiveShadow = true;
-  photo.userData = {URL: URLLink};
+  photo.userData = { URL: URLLink };
   scene.add(photo);
 }
-
-

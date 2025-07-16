@@ -1,14 +1,14 @@
-import { camera, renderer,  scene } from './world.js';
-import { cursorHoverObjects } from '../app.js';
+import { camera, renderer, scene } from "./world.js";
+import { cursorHoverObjects } from "../app.js";
 
 export function rotateCamera(ballPosition) {
-  var camPos = new THREE.Vector3(
+  const camPos = new THREE.Vector3(
     camera.position.x,
     camera.position.y,
     camera.position.z
   );
 
-  var targetPos;
+  let targetPos;
 
   if (
     (ballPosition.position.x < 77 &&
@@ -26,9 +26,7 @@ export function rotateCamera(ballPosition) {
       ballPosition.position.y + 50,
       ballPosition.position.z + 40
     );
-  }
-
-  else if (
+  } else if (
     ballPosition.position.x > -3 &&
     ballPosition.position.x < 22 &&
     ballPosition.position.z > 31 &&
@@ -39,17 +37,13 @@ export function rotateCamera(ballPosition) {
       ballPosition.position.y + 50,
       ballPosition.position.z + 40
     );
-  }
-
-  else if (ballPosition.position.z > 50) {
+  } else if (ballPosition.position.z > 50) {
     targetPos = new THREE.Vector3(
       ballPosition.position.x,
       ballPosition.position.y + 10,
       ballPosition.position.z + 40
     );
-  }
-
-  else {
+  } else {
     targetPos = new THREE.Vector3(
       ballPosition.position.x,
       ballPosition.position.y + 30,
@@ -62,20 +56,19 @@ export function rotateCamera(ballPosition) {
   camera.lookAt(ballPosition.position);
 }
 
-    
 export function onHover(event) {
   event.preventDefault();
-  var mouse = new THREE.Vector2();
-  mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
-  mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
-  var raycaster = new THREE.Raycaster();
+  const mouse = new THREE.Vector2();
+  mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+  mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+  const raycaster = new THREE.Raycaster();
   raycaster.setFromCamera(mouse, camera);
-  var intersects = raycaster.intersectObjects(cursorHoverObjects);
-  
-  if(intersects.length > 0) {
-    document.getElementById('document-body').style.cursor = 'pointer';
+  const intersects = raycaster.intersectObjects(cursorHoverObjects);
+
+  if (intersects.length > 0) {
+    document.getElementById("document-body").style.cursor = "pointer";
   } else {
-    document.getElementById('document-body').style.cursor = 'default';
+    document.getElementById("document-body").style.cursor = "default";
   }
 }
 
@@ -85,19 +78,18 @@ export function onClick(event) {
   const pos = {
     x: ((event.clientX - rect.left) * renderer.domElement.width) / rect.width,
     y: ((event.clientY - rect.top) * renderer.domElement.height) / rect.height,
-  }
+  };
 
   const pickPosition = { x: 0, y: 0 };
 
   pickPosition.x = (pos.x / renderer.domElement.width) * 2 - 1;
-  pickPosition.y = (pos.y / renderer.domElement.height) * -2 + 1; 
+  pickPosition.y = (pos.y / renderer.domElement.height) * -2 + 1;
 
   const myRaycaster = new THREE.Raycaster();
   myRaycaster.setFromCamera(pickPosition, camera);
 
   const intersectedObjects = myRaycaster.intersectObjects(scene.children);
   if (intersectedObjects.length) {
-
     if (intersectedObjects[0].object.userData.URL)
       window.open(intersectedObjects[0].object.userData.URL);
     else {
