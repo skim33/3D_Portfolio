@@ -155,7 +155,7 @@ function start() {
   addText(18, 0.01, 28, "email", 1, 0x000000);
   addText(18, 0.01, 30, "me", 1, 0x000000);
 
-  addPhotoOnPlane(-50, 0.025, 45, 50, 70, timelineTexture.main);
+  addPhotoOnPlane(-45, 0.025, 40, 30, 50, timelineTexture.main);
 
   addStatue();
 
